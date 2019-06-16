@@ -1,19 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { BrowserRouter as Router } from "react-router-dom";
 import Customers from './components/customers/customers'
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+
+class App extends Component {
+  state = {  }
+  render() { 
+    return ( 
+      <Router>
+        <>
         <Customers/>
-        
-        
-        </header>
-    </div>
-  );
-}
+        </>
+      </Router>
+      
 
+      );
+  }
+}
+ 
 export default App;
